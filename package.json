@@ -1,0 +1,31 @@
+{
+  "name": "style-sheet-component",
+  "version": "1.0.1",
+  "description": "react.js simple library for styling components",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "~3.7.2",
+    "@types/react": "^16.9.0"
+  },
+  "peerDependencies": {
+    "@types/react": "^16.9.0"
+  },
+  "keywords": [
+    "reactjs",
+    "react",
+    "react-native",
+    "component-style-sheet",
+    "style-sheet",
+    "js",
+    "ts",
+    "style",
+    "styles",
+    "stylesheet"
+  ],
+  "author": "Michal Hiterski",
+  "license": "ISC"
+}
