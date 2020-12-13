@@ -27,5 +27,9 @@
     "stylesheet"
   ],
   "author": "Michal Hiterski",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hityy/style-sheet-component"
+  },
   "license": "ISC"
 }
