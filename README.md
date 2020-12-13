@@ -17,10 +17,10 @@ interface Props {
 export const ExampleComponent: FC<Props> = ({ text }) => {
     return (
         <div style={styles.container}>
-            <p>{text}</p>
+            <p style={styles.text}>{text}</p>
         </div>
     );
-}
+};
 
 const styles = StyleSheet.create({
     container: {
