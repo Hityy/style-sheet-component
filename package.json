@@ -1,9 +1,9 @@
 {
   "name": "style-sheet-component",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "react.js simple library for styling components",
   "main": "index.js",
-  "types": "dist/index.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "build": "tsc"
   },
@@ -31,5 +31,5 @@
     "type": "git",
     "url": "https://github.com/Hityy/style-sheet-component"
   },
-  "license": "ISC"
+  "license": "MIT"
 }

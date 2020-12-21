@@ -11,16 +11,18 @@ Write styles and code in one file reactjs component like in react-native approac
 ## Example 
 ```typescript
 import React, { FC } from 'react';
-import { StyleSheet } from 'style-sheet-component';
+import { StyleSheet, useMediaQuery } from 'style-sheet-component';
 
 interface Props {
     text: string;
 }
 
 export const ExampleComponent: FC<Props> = ({ text }) => {
+    const matches = useMediaQuery({ min: 500 });
+
     return (
         <div style={styles.container}>
-            <p style={styles.text}>{text}</p>
+            <p style={matches ? styles.textDesktop : styles.textMobile}>{text}</p>
         </div>
     );
 };
@@ -30,9 +32,13 @@ const styles = StyleSheet.create({
         margin: '5px 20px',
         backgroundColor: 'blue'
     },
-    text: {
+    textMobile: {
         fontSize: "12px",
         color: 'yellow',
+    },
+    textDesktop: {
+        fontSize: "35px",
+        color: "white"
     }
 });
 ```
