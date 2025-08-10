@@ -23,8 +23,8 @@ export const useMediaQuery = (query: MinWidthPx | MaxWidthPx) => {
 
     useEffect(() => {
         const handler = (e: any) => setMatches(e.matches);
-        mediaMatch.addListener(handler);
-        return () => mediaMatch.removeListener(handler);
-    });
+        mediaMatch.addEventListener("change",handler);
+        return () => mediaMatch.removeEventListener("change",handler);
+    },[]);
     return matches;
 }
